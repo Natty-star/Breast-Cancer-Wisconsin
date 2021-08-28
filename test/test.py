@@ -10,7 +10,7 @@ class Test_file(unittest.TestCase):
 
     def test_diagnosis_col(self):
         df = pd.read_csv("data/data.csv")
-        assert df['diagnosis'].isin(["M","B"]).all() == True
+        assert df['diagnosis'].isin(["B","M"]).all() == True
        
 if(__name__ == '__main__'):
     unittest.main()
